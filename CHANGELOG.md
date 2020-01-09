@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Django 3.0 support
+- Python 3.8 support (requires pika>1.1.0 -- not officially release yet)
+- Inline type information according to PEP 484 / 561
+
+### Changed
+
+### Removed
+
+- Django 2.0 support
+
 ## [2.0]
 
 ### Added
