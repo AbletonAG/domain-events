@@ -23,6 +23,8 @@ jobs:
         - python: "3.8-dev"
           env: DJANGO="Django>=2.1,<2.2"
 install:
+    # Force installation of Python 3.8 compatible pika -- remove once pika>1.1.0 is released
+    - pip install git+https://github.com/pika/pika.git@cbc05fd8ccb04c3b4a5e99327d0dfd6fbd61e14d --upgrade
     - pip install -r requirements.txt -e .
     - pip install $DJANGO
     - pip install -r build_requirements.txt
