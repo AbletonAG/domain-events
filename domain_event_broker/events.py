@@ -15,7 +15,7 @@ def to_timestamp(dt: datetime, epoch: datetime = datetime(1970, 1, 1)) -> float:
 class DomainEvent(object):
 
     def __init__(self,
-                 routing_key: str = u"",
+                 routing_key: str = "",
                  data: Dict = {},
                  domain_object_id: Optional[str] = None,
                  uuid_string: Optional[str] = None,  # only set if recreated from json repr
